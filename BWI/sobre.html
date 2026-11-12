@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sobre a BWI Studio 3D | Nosso propósito</title>
+<meta name="description" content="Conheça a BWI Studio 3D: peças impressas em 3D sob encomenda, feitas com cuidado para presentear, decorar e brincar.">
+<meta name="theme-color" content="#132A6E">
+
+<!-- Prévia no WhatsApp: troque o domínio pelo endereço real do site -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="BWI Studio 3D">
+<meta property="og:title" content="Sobre a BWI Studio 3D">
+<meta property="og:description" content="Peças impressas em 3D sob encomenda, feitas com cuidado para presentear, decorar e brincar.">
+<meta property="og:url" content="https://www.bwistudio3d.com.br/sobre.html">
+<meta property="og:image" content="https://www.bwistudio3d.com.br/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Instrument+Serif:ital@0;1&family=Onest:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --blue:#1D3FA6; --blue-d:#132A6E; --navy:#0D1B45; --orange:#FF6B1A;
+  --cream:#F8F5EF; --cream-2:#EFE9DE; --ink:#141B2B; --muted:#5E6676; --line:#E3DCCF;
+  --font:"Onest",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  --serif:"Bricolage Grotesque",system-ui,sans-serif;
+  --accent:"Instrument Serif",Georgia,serif; --wa:#25D366;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font);color:var(--ink);background:var(--cream);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1120px,100% - 44px);margin-inline:auto}
+.eyebrow{display:inline-flex;align-items:center;gap:14px;font-size:12px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--orange)}
+.eyebrow::before{content:"";width:32px;height:1px;background:currentColor}
+
+/* Topo */
+.top{position:sticky;top:0;z-index:20;background:rgba(248,245,239,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:border-color .3s}
+.top.solid{border-color:var(--line)}
+.top .wrap{display:flex;justify-content:space-between;align-items:center;height:72px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800}
+.brand img{width:40px;height:40px;border-radius:11px;box-shadow:0 2px 10px rgba(0,0,0,.08);background:#fff}
+.brand span{display:flex;flex-direction:column;line-height:1.05;color:var(--blue-d);font-size:16px}
+.brand small{font-size:10px;letter-spacing:.24em;font-weight:700;opacity:.75}
+.top nav{display:flex;align-items:center;gap:6px}
+.back{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:999px;font-weight:600;font-size:14px;transition:background .2s}
+.back:hover{background:var(--cream-2)}
+.pill{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:999px;background:var(--ink);color:#fff;font-weight:700;font-size:14px;transition:transform .2s}
+.pill:hover{transform:translateY(-1px)}
+.pill svg,.back svg{width:17px;height:17px}
+@media (max-width:640px){.back span{display:none}.pill span{display:none}.pill{padding:10px 12px}}
+
+/* Hero */
+.hero{padding:96px 0 80px;position:relative}
+.hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(44px,7.6vw,96px);line-height:.98;letter-spacing:-.035em;margin:26px 0 30px;max-width:15ch}
+.hero h1 em{font-style:italic;color:var(--blue)}
+.hero-row{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end}
+.hero p{font-size:clamp(17px,1.6vw,19px);color:var(--muted);max-width:46ch}
+.scroll{justify-self:end;display:flex;align-items:center;gap:12px;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
+.scroll i{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;font-style:normal;animation:bob 2.4s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(5px)}}
+@media (max-width:760px){.hero{padding:64px 0 56px}.hero-row{grid-template-columns:1fr}.scroll{display:none}}
+
+/* Faixa de fotos */
+.strip{display:grid;grid-template-columns:1.25fr 1fr 1fr 1.25fr;gap:14px;height:min(420px,52vw)}
+.strip figure{border-radius:24px;overflow:hidden;background:#fff;position:relative}
+.strip figure:nth-child(2){margin-top:40px}.strip figure:nth-child(3){margin-bottom:40px}
+.strip img{width:100%;height:100%;object-fit:cover;transition:transform 1s}
+.strip figure:hover img{transform:scale(1.05)}
+@media (max-width:760px){.strip{grid-template-columns:1fr 1fr;height:auto}.strip figure{aspect-ratio:1;margin:0!important}}
+
+section{padding:110px 0}
+
+/* Propósito */
+.purpose{display:grid;grid-template-columns:.85fr 1.15fr;gap:70px;align-items:start}
+.purpose h2{font-family:var(--serif);font-weight:400;font-size:clamp(34px,4.4vw,54px);line-height:1.05;letter-spacing:-.025em;margin-top:18px}
+.purpose h2 em{font-style:italic;color:var(--orange)}
+.purpose .txt p{font-size:18px;color:var(--muted);margin-bottom:20px}
+.purpose .txt p:first-child{font-family:var(--serif);font-size:clamp(22px,2.4vw,28px);line-height:1.35;color:var(--ink);letter-spacing:-.01em}
+@media (max-width:860px){.purpose{grid-template-columns:1fr;gap:28px}}
+
+/* Processo */
+.process{background:var(--navy);color:#fff;border-radius:40px;margin:0 16px;padding:100px 0;position:relative;overflow:hidden}
+.process::before{content:"";position:absolute;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(255,107,26,.28),transparent 65%);right:-200px;top:-240px}
+.process .eyebrow{color:#FFB48A}
+.process h2{font-family:var(--serif);font-weight:400;font-size:clamp(34px,4.4vw,54px);line-height:1.05;letter-spacing:-.025em;margin:18px 0 60px;max-width:18ch}
+.process h2 em{font-style:italic;color:#FFB48A}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative}
+.step{padding:0 26px 0 0;position:relative}
+.step .n{font-family:var(--serif);font-size:15px;color:#FFB48A;display:flex;align-items:center;gap:14px;margin-bottom:22px}
+.step .n::after{content:"";flex:1;height:1px;background:rgba(255,255,255,.22)}
+.step:last-child .n::after{display:none}
+.step h3{font-family:var(--serif);font-weight:600;font-size:24px;letter-spacing:-.01em;margin-bottom:10px}
+.step p{font-size:15px;color:rgba(255,255,255,.72)}
+@media (max-width:860px){.steps{grid-template-columns:1fr 1fr;gap:40px 20px}.step .n::after{display:none}}
+@media (max-width:520px){.steps{grid-template-columns:1fr}.process{margin:0 10px;border-radius:30px;padding:72px 0}}
+
+/* Valores */
+.values-head{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap;margin-bottom:50px}
+.values-head h2{font-family:var(--serif);font-weight:400;font-size:clamp(34px,4.4vw,54px);line-height:1.05;letter-spacing:-.025em;margin-top:18px}
+.values-head h2 em{font-style:italic;color:var(--blue)}
+.values{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line)}
+.value{padding:36px 30px 10px 0;border-right:1px solid var(--line)}
+.value + .value{padding-left:30px}
+.value:last-child{border-right:0}
+.value .ic{font-family:var(--accent);font-style:italic;font-size:46px;line-height:1;color:var(--orange);margin-bottom:18px}
+.value h3{font-size:19px;font-weight:800;margin-bottom:8px}
+.value p{color:var(--muted);font-size:15.5px}
+@media (max-width:860px){.values{grid-template-columns:1fr}.value,.value+.value{padding:28px 0;border-right:0;border-bottom:1px solid var(--line)}}
+
+/* Contato */
+.contact{padding-top:40px}
+.contact-box{background:#fff;border-radius:36px;padding:64px;display:grid;grid-template-columns:1.1fr 1fr;gap:50px;align-items:center;box-shadow:0 30px 60px -40px rgba(20,27,43,.35)}
+.contact-box h2{font-family:var(--serif);font-weight:400;font-size:clamp(34px,4.2vw,52px);line-height:1.04;letter-spacing:-.025em;margin:18px 0 14px}
+.contact-box h2 em{font-style:italic;color:var(--blue)}
+.contact-box p{color:var(--muted);font-size:17px}
+.links{display:grid;gap:12px}
+.lk{display:flex;align-items:center;gap:16px;padding:18px 20px;border-radius:20px;border:1px solid var(--line);transition:border-color .2s,transform .2s,background .2s}
+.lk:hover{transform:translateX(4px);border-color:var(--ink)}
+.lk .ico{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;flex:none;color:#fff}
+.lk .ico svg{width:24px;height:24px}
+.lk.ig .ico{background:linear-gradient(45deg,#F9A825,#E1306C 50%,#833AB4)}
+.lk.wa .ico{background:var(--wa)}
+.lk.cat .ico{background:var(--blue)}
+.lk b{display:block;font-size:16px}
+.lk small{color:var(--muted);font-size:13.5px}
+.lk .arr{margin-left:auto;font-size:20px;color:var(--muted)}
+@media (max-width:860px){.contact-box{grid-template-columns:1fr;padding:38px 24px;gap:30px}}
+
+footer{padding:60px 0 50px;font-size:14px;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;border-top:1px solid var(--line);padding-top:26px}
+footer a{font-weight:700;color:var(--ink)}
+
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .9s,transform .9s}
+.reveal.vis{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+/* Destaques em itálico: Instrument Serif */
+h1 em,h2 em,h3 em,.h2 em,.hero h1 em{font-family:var(--accent);font-style:italic;font-weight:400;letter-spacing:-.01em}
+</style>
+</head>
+<body>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <a href="index.html" class="brand" aria-label="BWI Studio 3D, página inicial">
+      <img src="assets/img/icon-192.png" alt="" width="40" height="40">
+      <span>BWI<small>STUDIO 3D</small></span>
+    </a>
+    <nav>
+      <a href="index.html" class="back"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span>Voltar ao catálogo</span></a>
+      <a class="pill wa-link" data-msg="Olá, BWI! Vim pela página Sobre e gostaria de conversar."><svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-wa"/></svg><span>Fale com a gente</span></a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="padding-bottom:70px">
+    <div class="wrap">
+      <span class="eyebrow">Sobre a BWI</span>
+      <h1>Ideias que ganham forma, <em>camada por camada.</em></h1>
+      <div class="hero-row">
+        <p>A BWI Studio 3D é um estúdio de impressão 3D que cria peças sob encomenda para presentear, decorar e brincar. Cada pedido é produzido do zero, nas cores e quantidades que você escolher.</p>
+        <a href="#proposito" class="scroll">Conheça <i>↓</i></a>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap reveal">
+    <div class="strip">
+      <figure><img src="assets/img/n-presepio.jpg" alt="Presépio com textura de tricô"></figure>
+      <figure><img src="assets/img/s-dragao.jpg" alt="Dragão flexível articulado"></figure>
+      <figure><img src="assets/img/n-papai-noel.jpg" alt="Papai Noel com textura de tricô"></figure>
+      <figure><img src="assets/img/s-cubo-origami.jpg" alt="Cubo origami"></figure>
+    </div>
+  </div>
+
+  <section id="proposito">
+    <div class="wrap purpose">
+      <div class="reveal">
+        <span class="eyebrow">Nosso propósito</span>
+        <h2>Fazer peças que <em>significam</em> alguma coisa.</h2>
+      </div>
+      <div class="txt reveal">
+        <p>Acreditamos que um objeto feito sob medida carrega mais do que a sua forma: carrega a intenção de quem pediu.</p>
+        <p>Por isso tratamos cada encomenda como única. Seja uma lembrancinha de Natal para a família, um enfeite para a mesa da ceia ou um brinquedo sensorial que acompanha a rotina de uma criança, nosso trabalho é transformar a sua ideia em algo que dá para segurar nas mãos.</p>
+        <p>Usamos a impressão 3D porque ela permite exatamente isso: liberdade para criar, personalizar e produzir na quantidade certa, sem desperdício.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="process">
+    <div class="wrap" style="position:relative">
+      <span class="eyebrow">Como trabalhamos</span>
+      <h2>Do seu pedido à peça pronta, <em>com atenção em cada etapa.</em></h2>
+      <div class="steps">
+        <div class="step reveal"><div class="n">01</div><h3>Conversa</h3><p>Você conta o que precisa pelo WhatsApp: peça do catálogo ou uma ideia nova, com foto de referência.</p></div>
+        <div class="step reveal"><div class="n">02</div><h3>Orçamento</h3><p>Definimos juntos cores, tamanho, quantidade e prazo, com valor claro antes de começar.</p></div>
+        <div class="step reveal"><div class="n">03</div><h3>Produção</h3><p>A peça é impressa camada por camada e revisada com cuidado antes de seguir.</p></div>
+        <div class="step reveal"><div class="n">04</div><h3>Entrega</h3><p>Combinamos a melhor forma de a encomenda chegar até você.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="values-head reveal">
+        <div><span class="eyebrow">O que nos move</span><h2>Três coisas que <em>não abrimos mão.</em></h2></div>
+      </div>
+      <div class="values reveal">
+        <div class="value"><div class="ic">i.</div><h3>Cuidado</h3><p>Cada peça passa pelas nossas mãos antes de chegar às suas. Se não ficou bom para nós, não sai.</p></div>
+        <div class="value"><div class="ic">ii.</div><h3>Criatividade</h3><p>Do catálogo ao totalmente personalizado, gostamos de desafios e de ideias novas.</p></div>
+        <div class="value"><div class="ic">iii.</div><h3>Proximidade</h3><p>Atendimento direto, sem robô: você fala com quem faz a sua peça.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="wrap">
+      <div class="contact-box reveal">
+        <div>
+          <span class="eyebrow">Vamos conversar</span>
+          <h2>Tem uma ideia? <em>A gente imprime.</em></h2>
+          <p>Acompanhe nossos lançamentos no Instagram ou chame no WhatsApp para fazer seu pedido.</p>
+        </div>
+        <div class="links">
+          <a class="lk ig" href="https://instagram.com/bwistudio.3d" target="_blank" rel="noopener">
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></span>
+            <span><b>Instagram</b><small>@bwistudio.3d</small></span><span class="arr">↗</span></a>
+          <a class="lk wa wa-link" data-msg="Olá, BWI! Gostaria de fazer um pedido.">
+            <span class="ico"><svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-wa"/></svg></span>
+            <span><b>WhatsApp</b><small>(11) 99258-3299</small></span><span class="arr">↗</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>© <span id="yr">2026</span> BWI Studio 3D • Peças impressas em 3D sob encomenda.</div>
+    <div><a href="https://instagram.com/bwistudio.3d" target="_blank" rel="noopener">@bwistudio.3d</a></div>
+  </div>
+</footer>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35ZM12.04 21.5h-.01a9.4 9.4 0 0 1-4.8-1.32l-.34-.2-3.57.94.95-3.48-.22-.36a9.43 9.43 0 1 1 7.99 4.42Zm8.02-17.46A11.3 11.3 0 0 0 12.04.72 11.33 11.33 0 0 0 2.23 17.7L.62 23.58l6.02-1.58a11.3 11.3 0 0 0 5.4 1.37h.01A11.33 11.33 0 0 0 20.06 4.04Z"/></symbol>
+</svg>
+
+<script>
+const WHATSAPP="5511992583299";
+document.querySelectorAll(".wa-link").forEach(a=>{a.href=`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(a.dataset.msg||"Olá, BWI!")}`;a.target="_blank";a.rel="noopener";});
+document.getElementById("yr").textContent=new Date().getFullYear();
+const top_=document.getElementById("top");
+addEventListener("scroll",()=>top_.classList.toggle("solid",scrollY>10),{passive:true});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("vis");io.unobserve(e.target);}}),{threshold:.12});
+document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
